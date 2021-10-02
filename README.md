@@ -28,7 +28,7 @@ Unless otherwise noted, the libraries below target asynchronous Rust. The stack 
 
 ## Authentication
 
-### gouth
+### `gouth`
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/mechiru/gouth?style=social)](https://github.com/mechiru/gouth) [![crates.io](https://img.shields.io/crates/v/gouth.svg)](https://crates.io/crates/gouth)
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/gouth/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mechiru/gouth) ![GitHub contributors](https://img.shields.io/github/contributors/mechiru/gouth)
