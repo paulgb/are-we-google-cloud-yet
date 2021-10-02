@@ -90,14 +90,14 @@ Minimal API, for bucket-scoped access; built in service account authentication (
 [![GitHub Repo stars](https://img.shields.io/github/stars/NAlexPear/tracing-stackdriver?style=social)](https://github.com/NAlexPear/tracing-stackdriver) [![crates.io](https://img.shields.io/crates/v/tracing-stackdriver.svg)](https://crates.io/crates/tracing-stackdriver)
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/tracing-stackdriver/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/NAlexPear/tracing-stackdriver) ![GitHub contributors](https://img.shields.io/github/contributors/NAlexPear/tracing-stackdriver)
 
-A `tracing` subscriber for stackdriver.
+A `tracing` subscriber for stackdriver. Prints logs to stderr.
 
 ### stackdriver-logger
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/kamek-pf/stackdriver-logger?style=social)](https://github.com/kamek-pf/stackdriver-logger) [![crates.io](https://img.shields.io/crates/v/stackdriver_logger.svg)](https://crates.io/crates/stackdriver_logger)
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/stackdriver_logger/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/kamek-pf/stackdriver-logger) ![GitHub contributors](https://img.shields.io/github/contributors/kamek-pf/stackdriver-logger)
 
-A `log` subscriber for stackdriver.
+A `log` subscriber for stackdriver. Prints logs to stderr.
 
 ### opentelemetry-stackdriver
 
