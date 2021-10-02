@@ -6,9 +6,23 @@ Stars ⭐ indicate my preferred stack.
 
 ## Considerations
 
-- Authentication strategy
-- RPC protocol
-- Async runtime
+### Authentication strategy
+
+Requests to Google Cloud services (both REST and gRPC) [require](https://cloud.google.com/storage/docs/authentication) a bearer `Authorization` header. This token is a temporary token, typically associated with a service account.
+
+For code running in a Google VM (e.g. Compute Engine, Cloud Run, Cloud Build), it's possible to obtain the token for a service account using the [metadata service](https://cloud.google.com/compute/docs/metadata/default-metadata-values), a special REST service available only inside this environment.
+
+Otherwise, you can download a service account JSON file and use that to generate temporary tokens.
+
+Many libraries are designed for the JSON-based approach and may require it even when running in environments where the metadata service would be available.
+
+### RPC protocol
+
+Google Cloud APIs are all specified as [gRPC interfaces](https://github.com/googleapis/googleapis), which are implemented as both gRPC and REST APIs. For the most part, there is a 1:1 correspondence between the REST and gRPC APIs, but it's not perfect. I prefer gRPC APIs, in part because they seem to back the official clients and be higher priority to Google.
+
+### Async runtime
+
+Unless otherwise noted, the libraries below target asynchronous Rust. The stack is pretty consistent across crates: `tokio` as the runtime, `hyper` as an HTTP client, `tonic` for gRPC.
 
 ## Authentication
 
@@ -32,12 +46,6 @@ Stars ⭐ indicate my preferred stack.
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/yup-oauth2/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/dermesser/yup-oauth2) ![GitHub contributors](https://img.shields.io/github/contributors/dermesser/yup-oauth2)
 
 ## RPC
-
-### googleapis
-
-[![GitHub Repo stars](https://img.shields.io/github/stars/googleapis/googleapis?style=social)](https://github.com/googleapis/googleapis) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/googleapis/googleapis) ![GitHub contributors](https://img.shields.io/github/contributors/googleapis/googleapis)
-
-Not Rust code, but the official API specifications used to support auto-generated REST and gRPC clients.
 
 ### googapis ⭐
 
