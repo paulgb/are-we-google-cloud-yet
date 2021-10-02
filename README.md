@@ -26,6 +26,11 @@ Stars ⭐ indicate my preferred stack.
 
 **Asynchronous** auto-renewed tokens. The refreshing token interface is fully async, but the wrapped used for hyper/tonic integration is not; see [my patch](https://github.com/mechiru/google-authz/pull/1) for a fix.
 
+### yup-oauth2
+
+[![GitHub Repo stars](https://img.shields.io/github/stars/dermesser/yup-oauth2?style=social)](https://github.com/dermesser/yup-oauth2) [![crates.io](https://img.shields.io/crates/v/yup-oauth2.svg)](https://crates.io/crates/yup-oauth2)
+[![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/yup-oauth2/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/dermesser/yup-oauth2) ![GitHub contributors](https://img.shields.io/github/contributors/dermesser/yup-oauth2)
+
 ## RPC
 
 ### googleapis
@@ -39,7 +44,13 @@ Not Rust code, but the official API specifications used to support auto-generate
 [![GitHub Repo stars](https://img.shields.io/github/stars/mechiru/googapis?style=social)](https://github.com/mechiru/googapis) [![crates.io](https://img.shields.io/crates/v/googapis.svg)](https://crates.io/crates/googapis)
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/googapis/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mechiru/googapis) ![GitHub contributors](https://img.shields.io/github/contributors/mechiru/googapis)
 
-Rust bindings to gRPC APIs based on tonic. No direct support for authentication; instead, tonic clients can be wrapped in middleware for authentication. 
+Auto-generated Rust bindings to gRPC APIs based on tonic. No direct support for authentication; instead, tonic clients can be wrapped in middleware for authentication. Single crate with each API behind a feature flag.
+
+### google-apis-rs
+
+[![GitHub Repo stars](https://img.shields.io/github/stars/Byron/google-apis-rs?style=social)](https://github.com/Byron/google-apis-rs) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Byron/google-apis-rs) ![GitHub contributors](https://img.shields.io/github/contributors/Byron/google-apis-rs)
+
+Auto-generated Rust bindings to the REST APIs based on hyper. One crate per API; see [list of crates](http://byron.github.io/google-apis-rs/). Uses `yup-oauth2` for authentication.
 
 ### google-cloud
 
@@ -66,11 +77,44 @@ Minimal API, for bucket-scoped access; built in service account authentication (
 
 ## Observability
 
+### tracing-stackdriver ⭐
+
+[![GitHub Repo stars](https://img.shields.io/github/stars/NAlexPear/tracing-stackdriver?style=social)](https://github.com/NAlexPear/tracing-stackdriver) [![crates.io](https://img.shields.io/crates/v/tracing-stackdriver.svg)](https://crates.io/crates/tracing-stackdriver)
+[![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/tracing-stackdriver/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/NAlexPear/tracing-stackdriver) ![GitHub contributors](https://img.shields.io/github/contributors/NAlexPear/tracing-stackdriver)
+
+A `tracing` subscriber for stackdriver.
+
+### stackdriver-logger
+
+[![GitHub Repo stars](https://img.shields.io/github/stars/kamek-pf/stackdriver-logger?style=social)](https://github.com/kamek-pf/stackdriver-logger) [![crates.io](https://img.shields.io/crates/v/stackdriver_logger.svg)](https://crates.io/crates/stackdriver_logger)
+[![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/stackdriver_logger/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/kamek-pf/stackdriver-logger) ![GitHub contributors](https://img.shields.io/github/contributors/kamek-pf/stackdriver-logger)
+
+A `log` subscriber for stackdriver.
+
+### opentelemetry-stackdriver
+
+[![GitHub Repo stars](https://img.shields.io/github/stars/open-telemetry/opentelemetry-rust?style=social)](https://github.com/open-telemetry/opentelemetry-rust) [![crates.io](https://img.shields.io/crates/v/opentelemetry-stackdriver.svg)](https://crates.io/crates/opentelemetry-stackdriver)
+[![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/opentelemetry-stackdriver/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/open-telemetry/opentelemetry-rust) ![GitHub contributors](https://img.shields.io/github/contributors/open-telemetry/opentelemetry-rust)
+
+[OpenTelemetry](https://opentelemetry.io/) exporter for stackdriver. Writes logs over gRPC.
+
+## Database
+
+### firestore-serde
+
+[![GitHub Repo stars](https://img.shields.io/github/stars/paulgb/firestore-serde?style=social)](https://github.com/paulgb/firestore-serde) [![crates.io](https://img.shields.io/crates/v/firestore-serde.svg)](https://crates.io/crates/firestore-serde)
+[![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/firestore-serde/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/paulgb/firestore-serde) ![GitHub contributors](https://img.shields.io/github/contributors/paulgb/firestore-serde)
+
+Conversion between native Rust types and Firestore `Value`s using [Serde](https://serde.rs/). For use with the `googapis` interface to Firestore.
+
 ## Compute
 
 ### gce-meta
 
+[![GitHub Repo stars](https://img.shields.io/github/stars/mechiru/gcemeta?style=social)](https://github.com/mechiru/gcemeta) [![crates.io](https://img.shields.io/crates/v/gcemeta.svg)](https://crates.io/crates/gcemeta)
+[![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/gcemeta/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mechiru/gcemeta) ![GitHub contributors](https://img.shields.io/github/contributors/mechiru/gcemeta)
 
+Access to [metadata](https://cloud.google.com/compute/docs/metadata/overview) for VMs running on GCP.
 
 <!--
 
