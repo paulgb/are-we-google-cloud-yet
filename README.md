@@ -2,7 +2,7 @@
 
 A collection of Rust packages related to the Google Cloud Platform, in the spirit of [Are We X Yet](https://wiki.mozilla.org/Areweyet).
 
-Stars (⭐) indicate my preferred stack.
+Stars ⭐ indicate my preferred stack.
 
 ## Considerations
 
