@@ -71,6 +71,8 @@ Idiomatic Rust bindings for some GCP services, including storage, based on gRPC 
 
 ## Storage
 
+Google Cloud Storage is Google's blob store, roughly equivalent to Amazon S3. Although a gRPC API spec exists, it is not (as far as I can tell) available to regular users outside of Google.
+
 ### `cloud-storage`
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/ThouCheese/cloud-storage-rs?style=social)](https://github.com/ThouCheese/cloud-storage-rs) [![crates.io](https://img.shields.io/crates/v/cloud-storage.svg)](https://crates.io/crates/cloud-storage)
@@ -86,6 +88,10 @@ Only supports JSON service account authentication (file or directly through non-
 Minimal API, for bucket-scoped access; built in service account authentication (standard env var) and pluggable.
 
 ## Observability
+
+Google Cloud Platform attempts to parse emitted log lines as JSON, which are allowed to contain both arbitrary key/values and well-known keys like “severity”. Libraries exist for integrating a number of popular logging/telemetry crates to emit this format.
+
+This functionality originally came from a company Google acquired called Stackdriver. Officially, that branding has been phased out in favor of Google Cloud Operations Suite.
 
 ### ⭐ `tracing-stackdriver`
 
@@ -109,6 +115,13 @@ A `log` subscriber for stackdriver. Prints logs to stderr.
 [OpenTelemetry](https://opentelemetry.io/) exporter for stackdriver. Writes logs over gRPC.
 
 ## Database
+
+Confusingly, there are several similarly-named databases under the Google Cloud Platform umbrella:
+- Firestore
+- Firebase
+- Datastore
+
+Firestore is the database Google gently steers you towards for new projects, but I haven't seen any indication that the others are going away.
 
 ### ⭐ `firestore-serde`
 
