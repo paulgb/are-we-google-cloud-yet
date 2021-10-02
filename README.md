@@ -80,7 +80,7 @@ Only supports JSON service account authentication (file or directly through non-
 
 ### cloud-storage-lite ⭐
 
-[![GitHub Repo stars](https://shields.io/badge/-gitlab-orange)](https://gitlab.com/oasislabs/cloud-storage-lite) [![crates.io](https://img.shields.io/crates/v/cloud-storage-lite.svg)](https://crates.io/crates/cloud-storage-lite)
+[![GitHub Repo stars](https://shields.io/badge/-gitlab-F7F7F7)](https://gitlab.com/oasislabs/cloud-storage-lite) [![crates.io](https://img.shields.io/crates/v/cloud-storage-lite.svg)](https://crates.io/crates/cloud-storage-lite)
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/cloud-storage-lite/)
 
 Minimal API, for bucket-scoped access; built in service account authentication (standard env var) and pluggable.
