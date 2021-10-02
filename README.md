@@ -110,7 +110,7 @@ A `log` subscriber for stackdriver. Prints logs to stderr.
 
 ## Database
 
-### firestore-serde
+### firestore-serde ⭐
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/paulgb/firestore-serde?style=social)](https://github.com/paulgb/firestore-serde) [![crates.io](https://img.shields.io/crates/v/firestore-serde.svg)](https://crates.io/crates/firestore-serde)
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/firestore-serde/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/paulgb/firestore-serde) ![GitHub contributors](https://img.shields.io/github/contributors/paulgb/firestore-serde)
