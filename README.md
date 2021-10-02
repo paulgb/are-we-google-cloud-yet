@@ -8,7 +8,7 @@ Stars ⭐ indicate my preferred stack.
 
 ### Authentication strategy
 
-Requests to Google Cloud services (both REST and gRPC) [require](https://cloud.google.com/storage/docs/authentication) a bearer `Authorization` header. This token is a temporary token, typically associated with a service account.
+Requests to Google Cloud services (both REST and gRPC) [require](https://cloud.google.com/storage/docs/authentication) a bearer `Authorization` header. This token is an expiring token, typically associated with a service account.
 
 For code running in a Google VM (e.g. Compute Engine, Cloud Run, Cloud Build), it's possible to obtain the token for a service account using the [metadata service](https://cloud.google.com/compute/docs/metadata/default-metadata-values), a special REST service available only inside this environment.
 
