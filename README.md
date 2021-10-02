@@ -16,6 +16,8 @@ Otherwise, you can download a service account JSON file and use that to generate
 
 Many libraries are designed for the JSON-based approach and may require it even when running in environments where the metadata service would be available.
 
+Just because a service has an API spec doesn't mean that the specified API is generally available to users. In particular, cloud storage is only generally available through a REST API even though a gRPC spec exists.
+
 ### RPC protocol
 
 Google Cloud APIs are all specified as [gRPC interfaces](https://github.com/googleapis/googleapis), which are implemented as both gRPC and REST APIs. For the most part, there is a 1:1 correspondence between the REST and gRPC APIs, but it's not perfect. I prefer gRPC APIs, in part because they seem to back the official clients and be higher priority to Google.
