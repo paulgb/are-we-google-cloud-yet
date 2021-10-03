@@ -40,7 +40,7 @@ Unless otherwise noted, the libraries below target asynchronous Rust. The stack 
 [![GitHub Repo stars](https://img.shields.io/github/stars/mechiru/google-authz?style=social)](https://github.com/mechiru/google-authz) [![crates.io](https://img.shields.io/crates/v/google-authz.svg)](https://crates.io/crates/google-authz)
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/google-authz/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mechiru/google-authz) ![GitHub contributors](https://img.shields.io/github/contributors/mechiru/google-authz)
 
-**Asynchronous** auto-renewed tokens. The refreshing token interface is fully async, but the wrapped used for hyper/tonic integration is not; see [my patch](https://github.com/mechiru/google-authz/pull/1) for a fix.
+**Asynchronous** auto-renewed tokens.
 
 ### `yup-oauth2`
 
