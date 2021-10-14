@@ -128,6 +128,8 @@ Firestore is the database Google gently steers you towards for new projects, but
 [![GitHub Repo stars](https://img.shields.io/github/stars/paulgb/tiny-firestore-odm?style=social)](https://github.com/paulgb/tiny-firestore-odm) [![crates.io](https://img.shields.io/crates/v/tiny-firestore-odm.svg)](https://crates.io/crates/tiny-firestore-odm)
 [![docs.rs](https://img.shields.io/badge/docs-release-brightgreen)](https://docs.rs/tiny-firestore-odm/) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/paulgb/tiny-firestore-odm) ![GitHub contributors](https://img.shields.io/github/contributors/paulgb/tiny-firestore-odm)
 
+A simple object-document mapper built on `firestore-serde`.
+
 ### ⭐ `firestore-serde`
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/paulgb/firestore-serde?style=social)](https://github.com/paulgb/firestore-serde) [![crates.io](https://img.shields.io/crates/v/firestore-serde.svg)](https://crates.io/crates/firestore-serde)
